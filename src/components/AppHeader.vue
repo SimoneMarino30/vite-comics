@@ -25,7 +25,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-// @use "../assets/scss/partials/mixin.scss";
+// @use "../assets/scss/partials/mixin.scss as*";
 @use "../assets/scss/general.scss";
 
 header {
