@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-  <header>
+  <section>
     <img src="../assets/img/dc-logo.png" alt="" />
     <ul>
       <li><a href="">CHARACTERS</a></li>
@@ -21,14 +21,14 @@ export default {
       <li><a href="">NEWS</a></li>
       <li><a href="">SHOP</a></li>
     </ul>
-  </header>
+  </section>
 </template>
 
 <style lang="scss" scoped>
 // @use "../assets/scss/partials/mixin.scss as*";
 @use "../assets/scss/general.scss";
 
-header {
+section {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -38,7 +38,10 @@ header {
 }
 
 img {
+  widows: 100px;
+  height: 100px;
   padding: 20px;
+  border: 3px dashed red;
 }
 li {
   display: inline-block;

@@ -1,32 +1,39 @@
 <script>
-export default {};
+import MoviesList from "../components/MoviesList.vue";
+
+export default {
+  // props: {
+  //   card: Array,
+  // },
+  components: { MoviesList },
+};
 </script>
 
 <template>
-  <main>
-    <div class="main-img"></div>
+  <section>
     <label for="">CURRENT SERIES</label>
-    <div class="main-content">dddd</div>
-  </main>
+    <div class="main-content">
+      <MoviesList />
+      <!-- <MovieCard v-for="movie in MoviesList" :card="movie" /> -->
+    </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
 @use "../src/assets/scss/general.scss";
 
-main {
+section {
   background-image: url(../assets/img/jumbotron.jpg);
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: end;
   min-height: 90vh;
-  .main-img {
-  }
 
   label {
     position: absolute;
-    top: 500px;
-    left: 250px;
+    top: 28.5rem;
+    left: 20rem;
     border: 1px solid black;
     background-color: #0282f9;
     color: white;
@@ -38,10 +45,11 @@ main {
   }
 
   .main-content {
+    margin-top: 30rem;
     background-color: #1c1c1c;
     color: white;
     // debug
-    height: 20rem;
+    border: 3px dashed yellowgreen;
   }
 }
 </style>

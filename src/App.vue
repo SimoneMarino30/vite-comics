@@ -3,23 +3,31 @@ import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
 import MiddleBar from "./components/MiddleBar.vue";
 import AppFooter from "./components/AppFooter.vue";
+// import MoviesList from "./components/MoviesList.vue";
+// import MovieCard from "./components/MovieCard.vue";
 
 export default {
   data() {
-    return {
-      title: "App",
-    };
+    return {};
   },
 
   components: { AppHeader, AppMain, MiddleBar, AppFooter },
+  // , MoviesList
 };
 </script>
 
 <template>
-  <AppHeader />
-  <AppMain />
-  <MiddleBar />
-  <AppFooter />
+  <header>
+    <AppHeader />
+  </header>
+  <main>
+    <AppMain />
+    <!-- <MoviesList /> -->
+    <MiddleBar />
+  </main>
+  <footer>
+    <AppFooter />
+  </footer>
 </template>
 
 <style lang="scss">

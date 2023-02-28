@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-  <footer>
+  <div class="footer-container">
     <section>
       <ul>
         <li>DC COMICS</li>
@@ -60,11 +60,11 @@ export default {
         <img src="../assets/img/footer-periscope.png" alt="" />
       </div>
     </section>
-  </footer>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-footer {
+.footer-container {
   background-image: url(../assets/img/footer-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
