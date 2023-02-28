@@ -1,5 +1,8 @@
 <script>
+import Moviecard from "./MovieCard.vue";
+
 export default {
+  components: { Moviecard },
   data() {
     return {
       Movies: [
@@ -95,39 +98,19 @@ export default {
 
 <template>
   <ul>
-    <li v-for="movie in Movies" :key="movie.series">
-      <img :src="movie.thumb" alt="" />
-      <h3>{{ movie.series }}</h3>
-    </li>
+    <Moviecard v-for="movie in Movies" :card="movie" />
   </ul>
 </template>
-<!-- <MovieCard v-for="movie in MoviesList" :card="movie" /> -->
+
 <style lang="scss" scoped>
 ul {
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 3rem auto;
-  background-color: green;
   color: white;
-  border: 3px dashed red;
 
-  li {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 10px;
-    border: 3px dashed blue;
-    img {
-      width: 170px;
-      height: 200px;
-    }
-
-    h3 {
-      border: 3px dashed orange;
-      width: 170px;
-      text-transform: uppercase;
-    }
-  }
+  //   background-color: green;
+  //   border: 3px dashed red;
 }
 </style>

@@ -41,12 +41,13 @@ img {
   widows: 100px;
   height: 100px;
   padding: 20px;
-  border: 3px dashed red;
+  // border: 3px dashed red;
 }
 li {
   display: inline-block;
   padding: 0.5rem;
   a {
+    color: black;
     text-decoration: none;
   }
 }

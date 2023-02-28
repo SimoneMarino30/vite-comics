@@ -10,7 +10,7 @@ export default {
   <div class="footer-container">
     <section>
       <ul>
-        <li>DC COMICS</li>
+        <h2>DC COMICS</h2>
         <li><a href="#">Characters</a></li>
         <li><a href="#">Comics</a></li>
         <li><a href="#">Movies</a></li>
@@ -18,12 +18,12 @@ export default {
         <li><a href="#">Games</a></li>
         <li><a href="#">Videos</a></li>
         <li><a href="#">News</a></li>
-        <li>SHOP</li>
+        <h2>SHOP</h2>
         <li><a href="#">Shop DC</a></li>
         <li><a href="#">Shop DC Collectibles</a></li>
       </ul>
       <ul>
-        <li>DC</li>
+        <h2>DC</h2>
         <li><a href="#">Terms Of Use</a></li>
         <li><a href="#">Privacy policy (New)</a></li>
         <li><a href="#">Ad Choices</a></li>
@@ -37,7 +37,7 @@ export default {
         <li><a href="#">Contact Us</a></li>
       </ul>
       <ul>
-        <li>SITES</li>
+        <h2>SITES</h2>
         <li><a href="#">DC</a></li>
         <li><a href="#">MAD Magazine</a></li>
         <li><a href="#">DC Kides</a></li>
@@ -45,21 +45,24 @@ export default {
         <li><a href="#">DC Power Visa</a></li>
       </ul>
 
-      <img src="../assets/img/dc-logo-bg.png" alt="" />
+      <img class="big-logo" src="../assets/img/dc-logo-bg.png" alt="" />
     </section>
-    <section>
-      <div>
-        <button>SIGN UP NOW</button>
-      </div>
-      <div class="social">
-        <span>FOLLOW US</span>
-        <img src="../assets/img/footer-facebook.png" alt="" />
-        <img src="../assets/img/footer-twitter.png" alt="" />
-        <img src="../assets/img/footer-youtube.png" alt="" />
-        <img src="../assets/img/footer-pinterest.png" alt="" />
-        <img src="../assets/img/footer-periscope.png" alt="" />
-      </div>
-    </section>
+
+    <div class="bottom-footer">
+      <section>
+        <div>
+          <button>SIGN UP NOW</button>
+        </div>
+        <div class="social">
+          <span>FOLLOW US</span>
+          <img src="../assets/img/footer-facebook.png" alt="" />
+          <img src="../assets/img/footer-twitter.png" alt="" />
+          <img src="../assets/img/footer-youtube.png" alt="" />
+          <img src="../assets/img/footer-pinterest.png" alt="" />
+          <img src="../assets/img/footer-periscope.png" alt="" />
+        </div>
+      </section>
+    </div>
   </div>
 </template>
 
@@ -78,15 +81,47 @@ export default {
     justify-content: space-between;
   }
 
+  .bottom-footer {
+    padding: 2rem 0;
+    background-color: black;
+  }
+
+  .big-logo {
+    padding: 3rem;
+  }
+
   ul {
     padding: 20px;
     li {
-      padding: 0.25rem;
+      padding: 0.25rem 0;
+    }
+
+    h2 {
+      margin: 1rem 0;
+    }
+    a {
+      color: white;
+      text-decoration: none;
     }
   }
 
   .social {
-    display: inline-block;
+    display: flex;
+
+    // border: 3px dashed blue;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      // border: 3px dashed orange;
+    }
+
+    img {
+      padding: 1rem;
+      // border: 3px dashed red;
+    }
   }
 }
 </style>

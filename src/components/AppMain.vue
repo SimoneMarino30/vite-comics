@@ -48,8 +48,8 @@ section {
     margin-top: 30rem;
     background-color: #1c1c1c;
     color: white;
-    // debug
-    border: 3px dashed yellowgreen;
+
+    // border: 3px dashed yellowgreen;
   }
 }
 </style>
